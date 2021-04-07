@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  seed_type: MyString
+  seed_date: 2021-04-07
+  light: MyString
+  soil: MyString
+  problems: MyText
+  fertilized: false
+  pesticides: false
+  watered: false
+
+two:
+  type: 
+  seed_type: MyString
+  seed_date: 2021-04-07
+  light: MyString
+  soil: MyString
+  problems: MyText
+  fertilized: false
+  pesticides: false
+  watered: false
