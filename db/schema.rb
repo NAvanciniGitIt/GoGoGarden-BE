@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_04_07_173446) do
   enable_extension "plpgsql"
 
   create_table "plants", force: :cascade do |t|
-    t.string "type"
+    t.string "plant_type"
     t.string "seed_type"
     t.date "seed_date"
     t.string "light"
@@ -24,9 +24,6 @@ ActiveRecord::Schema.define(version: 2021_04_07_173446) do
     t.string "soil"
     t.text "notes"
     t.text "problems"
-    t.boolean "fertilized"
-    t.boolean "pesticides"
-    t.boolean "watered"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
