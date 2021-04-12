@@ -5,12 +5,12 @@ class PlantsController < ApplicationController
   def index
     @plants = Plant.all
 
-    render json: @plants
+    render json: @plants, include:[:comments]
   end
 
   # GET /plants/1
   def show
-    render json: @plant
+    render json: @plant, include: [:comments]
   end
 
   # POST /plants
