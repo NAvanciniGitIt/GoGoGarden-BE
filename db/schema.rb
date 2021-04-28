@@ -23,13 +23,13 @@ ActiveRecord::Schema.define(version: 2021_04_12_153131) do
   end
 
   create_table "plants", force: :cascade do |t|
-    t.string "plant_type"
+    t.string "plant_cat"
     t.string "seed_type"
-    t.date "seed_date"
-    t.string "light"
-    t.text "environment"
+    t.string "light_type"
+    t.string "environment"
     t.string "soil"
-    t.text "notes"
+    t.string "fertilizer"
+    t.string "harvest"
     t.text "problems"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

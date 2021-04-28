@@ -1,13 +1,13 @@
 class CreatePlants < ActiveRecord::Migration[6.1]
   def change
     create_table :plants do |t|
-      t.string :plant_type
+      t.string :plant_cat
       t.string :seed_type
-      t.date :seed_date
-      t.string :light
-      t.text :environment
+      t.string :light_type
+      t.string :environment
       t.string :soil
-      t.text :notes 
+      t.string :fertilizer
+      t.string :harvest
       t.text :problems
 
       t.timestamps
